@@ -1,0 +1,34 @@
+.header {
+    display: flex;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    max-width: 11rem;
+}
+
+.header__logo-link {
+    display: flex;
+}
+
+.header__cta {
+    padding: .5rem 2rem;
+    color: $primary-pink;
+    font-size: 0.8rem;
+    text-decoration: none;
+    border: 1px solid $primary-pink;
+    border-radius: 25px;
+    box-shadow: 1px 3px 5px #e8e8e8;
+    transition: all $default-transition;
+    &:hover,
+    &:focus {
+        background-color: $primary-pink;
+        color: white;
+        outline: 0;
+    }
+}

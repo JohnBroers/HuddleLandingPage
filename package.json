@@ -1,0 +1,15 @@
+{
+  "name": "huddlelandingpage",
+  "version": "1.0.0",
+  "description": "Huddle landing page",
+  "main": "index.html",
+  "scripts": {
+    "scss": "node-sass --watch scss -o css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "node-sass": "^4.14.1"
+  }
+}

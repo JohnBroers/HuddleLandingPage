@@ -1,0 +1,146 @@
+.footer {
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: $dark-cyan;
+    color: white;
+
+    &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 53px;
+        width: 100%;
+        top: -52px;
+        left: 0;
+        background: url('./../images/bg-footer-top-mobile.svg');
+        background-size: 100% 53px;
+    }
+    .inner-container {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
+
+.newsletter {
+
+    &__col {
+        margin-bottom: 5rem;
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+        font-family: $font-heading;
+        text-transform: uppercase;
+    }
+
+    &__content {
+        margin-bottom: 2rem;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        @media screen and (min-width: 990px) {
+            flex-direction: row;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        border-radius: .4rem;
+        border: 0;
+        @media screen and (min-width: 990px) {
+            margin-bottom: 0;
+            margin-right: 1rem;
+        }
+    }
+
+    &__button {
+        display: inline-block;
+        padding: 1rem 3rem;
+        background-color: $primary-pink;
+        color: white;
+        font-size: 1rem;
+        text-decoration: none;
+        border-radius: .4rem;
+        border: 1px solid $primary-pink;
+        cursor: pointer;
+        transition: background-color $default-transition;
+        &:hover,
+        &:focus {
+            background-color: $dark-pink;
+        }
+    }
+}
+
+.contact {
+    &__col {
+        @media screen and (min-width: 768px) {
+            margin-right: 5rem;
+            order: -1;
+        }
+    }
+    &__logo {
+        max-width: 300px;
+        margin-bottom: 1rem;
+        filter: brightness(0) invert(1);
+    }
+    &__content {
+        margin-bottom: 3rem;
+    }
+    &__options {
+        margin-bottom: 3rem;
+    }
+
+    &__option-item  {
+        display: flex;
+        margin-bottom: 1.25rem;
+        align-items: center;
+    }
+
+    &__option-link {
+        text-decoration: none;
+        color: white;
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+            outline: 0;
+        }
+    }
+
+    &__icon {
+        width: 1.25rem;
+        margin-right: 1rem;
+    }
+}
+
+.social-links {
+    &__list {
+        display: flex;
+    }
+    &__list-item {
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+    &__link {
+        color: white;
+        font-size: 3rem;
+        text-decoration: none;
+        opacity: 1;
+        transition: opacity $default-transition;
+        &:focus,
+        &:hover {
+            opacity: 0.6;
+            outline: 0;
+        }
+    }
+}

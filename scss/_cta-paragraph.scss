@@ -1,0 +1,46 @@
+.cta {
+    &__paragraph {
+        max-width: 60em;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5rem 3rem;
+        text-align: center;
+        &.community {
+            margin-bottom: 5rem;
+        }
+    }
+    
+    &__title {
+        margin-bottom: 2rem;
+        color: $dark-cyan;
+        font-size: 2rem;
+        font-family: $font-heading;
+    }
+
+    &__content {
+        max-width: 30em;
+        margin-bottom: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__button {
+        display: inline-block;
+        padding: .75rem 3.5rem;
+        background-color: $primary-pink;
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        border: 1px solid $primary-pink;
+        border-radius: 25px;
+        box-shadow: 1px 3px 5px #e8e8e8;
+        transition: all $default-transition;
+        &:hover,
+        &:focus {
+            background-color: white;
+            color: $primary-pink;
+            outline: 0;
+        }
+    }
+}
